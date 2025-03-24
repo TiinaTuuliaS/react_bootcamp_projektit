@@ -1,0 +1,13 @@
+# Node.js:n riippuvuudet
+node_modules/
+
+# Ympäristömuuttujat
+.env
+
+# Build-kansiot
+dist/
+build/
+
+# Lokit ja välimuistit
+*.log
+.cache/
