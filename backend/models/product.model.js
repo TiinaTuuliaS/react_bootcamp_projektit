@@ -1,7 +1,5 @@
 import mongoose from "mongoose";
 
-
-
 const productSchema = new mongoose.Schema(
 	{
 		name: {
@@ -18,11 +16,10 @@ const productSchema = new mongoose.Schema(
 		},
 	},
 	{
-		timestamps: true, // createdAt, updatedAt --- koska luotu koska päivitetty
+		timestamps: true, // createdAt, updatedAt
 	}
 );
 
-// Muodostetaan tietokantakysely
 const Product = mongoose.model("Product", productSchema);
 
 export default Product;
