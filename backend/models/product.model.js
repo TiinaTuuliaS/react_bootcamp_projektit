@@ -18,10 +18,11 @@ const productSchema = new mongoose.Schema(
 		},
 	},
 	{
-		timestamps: true, // createdAt, updatedAt
+		timestamps: true, // createdAt, updatedAt --- koska luotu koska päivitetty
 	}
 );
 
+// Muodostetaan tietokantakysely
 const Product = mongoose.model("Product", productSchema);
 
 export default Product;
